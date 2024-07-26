@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Portfolio Website Design</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <!----Font awesome cdn  font icon css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+</head>
+<body>
+     <div class="hero-header">
+        <div class="wrapper">
+            <header>
+                <div class="logo">
+                    <i class="fa-solid fa-j"></i>
+                    <div class="logo-text">Jean-Gabriel Lerouge</div>
+                </div>
+                <nav>
+                    <div class="togglebtn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <ul class="navlinks">
+                        <li><strong><a href="#">Home</a></strong></li>
+                        <li><strong><a href="#">Portfolio</a></strong></li>
+                        <li><strong><a href="#">About</a></strong></li>
+                        <li><strong><a href="#">Projet</a></strong></li>
+                        <li><strong><a href="#">Contact</a></strong></li>
+                    </ul>
+                </nav>
+            </header>
+            <div class="container">
+                 <div class="hero-pic">
+                    <img src="images/moi.jpg" alt="profile pic">
+                 </div>
+                 <div class="hero-text">
+                    <h5>Hi I'm <span class="input">Frontend Developer</span></h5>
+                    <h1>Jean-Gabriel Lerouge</h1>
+                    <p> Un jeune développeur passionné, déterminé 
+                    </p>
+
+                    <div class="btn-group">
+                       <a href="#" class="btn active">Download CV</a>
+                       <a href="#" class="btn">Contact</a>
+                    </div>
+
+                    <div class="social">
+                        
+                        <a href="https://www.linkedin.com/in/jean-gabriel-lerouge-583978190/"><i class="fa-brands fa-linkedin"></i></a>
+                        
+                        
+                    </div>
+                 </div>
+            </div>
+        </div>
+       
+     </div>
+     <h2>À propos de moi</h2>
+     <div class="lol">
+        <div class="bruh">
+            <img src="images/main_photo.jpg" alt="profile pic">
+        </div>
+       
+    
+      
+     
+     <div class="lol">
+        <div class="test">
+            <h3> Je suis un etudiant à temps au collège de Rosemont</h3>
+            <div class="d" >
+                <div class="Gauche">
+                    <img src="images/experience.png" alt="profile pic">
+                    <p> Experience</p>
+                    <p> 3+ ans</p>
+                    <p>Développeur-Full-Stack</p>
+
+                </div>
+        
+                <div class="Droite">
+                    <img src="images/education.png" alt="profile pic">
+                    <p> Collège Rosemont</p>
+                    <p>DEC Applications web et mobile</p>
+                
+
+                </div>
+            </div>
+        <div>
+            <p> Je suis quelqu'un qui adore apprendre. Le fait de pouvoir travailler  
+                dans domaine en pleine expension telle que l'informatique qui est en constante évolution. 
+                Je suis également qui adore l'activité comme le vélo, la musculation et le basketBall qui m'aide à avoir une vie équilibrée. </p>
+            </div>
+        </div>
+        
+    </div>
+    
+
+     
+     <!---typed js for typing text effect-->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js"></script>
+     <script>
+        /** creating button click show hide navbar **/
+        var togglebtn=document.querySelector(".togglebtn");
+        var nav=document.querySelector(".navlinks");
+        var links=document.querySelector(".navlinks li");
+
+        togglebtn.addEventListener("click", function(){
+            this.classList.toggle("click");
+            nav.classList.toggle("open");
+        })
+
+        var typed=new Typed(".input",{
+            strings:["Frontend Developer","Full-stack Developer","Web Developer"],
+            typedSpeed:80,
+            backSpeed:85,
+            loop:true
+        })
+     </script>
+</body>
+</html>
