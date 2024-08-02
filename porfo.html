@@ -10,10 +10,10 @@
     <!----Font awesome cdn  font icon css -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 <body>
-     <div class="hero-header">
+     <div class="hero-header" id="section-profil">
         <div class="wrapper">
             <header>
                 <div class="logo">
@@ -27,11 +27,12 @@
                         <span></span>
                     </div>
                     <ul class="navlinks">
-                        <li><strong><a href="#">Home</a></strong></li>
-                        <li><strong><a href="#">Portfolio</a></strong></li>
-                        <li><strong><a href="#">About</a></strong></li>
-                        <li><strong><a href="#">Projet</a></strong></li>
-                        <li><strong><a href="#">Contact</a></strong></li>
+                        <li><strong><a href="#" id="HomeLien">Home</a></strong></li>
+                        <li><strong><a href="#"  id="MoiLien">About</a></strong></li>
+                        <li><strong><a href="#"  id="CompétencesLien">Skills</a></strong></li>
+                        <li><strong><a href="#" id="ServiceLien">Services</a></strong></li>
+                        <li><strong><a href="#" id="ProjetLien">Projets</a></strong></li>
+                        <li><strong><a href="#"  id="ContactLien">Contact</a></strong></li>
                     </ul>
                 </nav>
             </header>
@@ -63,7 +64,7 @@
         </div>
        
      </div>
-     <h2>À propos de moi</h2>
+     <h2 id="section-moi">À propos de moi</h2>
      <div class="lol">
         <div class="bruh">
             <img src="images/main_photo.jpg" alt="profile pic">
@@ -104,7 +105,7 @@
 
     <br><br><br><br><br><br><br><br>
 
-   <h2>Compétences</h2>
+   <h2 id="section-Competences">Compétences</h2>
    <div class="this">
     <section class="skills section" id="skills">
         <div class="container flex-center">
@@ -264,31 +265,31 @@
 </div>
 
 <br><br><br><br><br><br><br><br>
-<h2>Services</h2>
+<h2 id="section-Service">Services</h2>
 <div class="Vertical-service">
 
     <div class="Horizontal-service">
         <div class="service">
             <img src="/images/mobile.png">
             <p>Android </p>
-            <button class="openModal"> Learn more</button>
+            <button class="openModal" data-modal="modal1"> Learn more</button>
             
          </div>
          <div class="service">
             <img src="/images/mobile.png">
             <p>Android </p>
-            <button class="openModal"> Learn more</button>
+            <button class="openModal" data-modal="modal2"> Learn more</button>
          </div>
          <div class="service">
             <img src="/images/design.png">
             <p>Web Developpement </p>
-            <button class="openModal"> Learn more</button>
+            <button class="openModal"data-modal="modal3"> Learn more</button>
          </div>
          <div class="service">
             <img src="/images/program.png">
             
             <p>Infographie 2D 3D<p>
-                <button class="openModal"> Learn more</button>
+                <button class="openModal" data-modal="modal4"> Learn more</button>
          </div>
     </div>
 
@@ -298,17 +299,46 @@
 
 </div>
 
-<div class="modal" id="modal">
+<!-- Modal 1 -->
+<div id="modal1" class="modal">
     <div class="modal-content">
-        <span class="close-button" id="closeModal">&times;</span>
-        <p>Your content goes herefdbdgrgrewgrewgregregregge
-            ergergregregregregreg
-            ergregregreg<br><br><br><br>
-        </p>
+        <span class="close" data-modal="modal1">&times;</span>
+        <p>This is Modal 1!</p>
+    </div>
+</div>
+
+<!-- Modal 2 -->
+<div id="modal2" class="modal">
+    <div class="modal-content">
+        <span class="close" data-modal="modal2">&times;</span>
+        <p>This is Modal 2!</p>
+        <img src="/images/check_mark.png">
+    </div>
+</div>
+
+
+<div id="modal3" class="modal">
+    <div class="modal-content">
+        <span class="close" data-modal="modal3">&times;</span>
+        <p>This is Modal 3!</p>
+    </div>
+</div>
+
+<div id="modal4" class="modal">
+    <div class="modal-content">
+        <span class="close" data-modal="modal4">&times;</span>
+        <p>This is Modal 4!</p>
+    </div>
+</div>
+
+<div id="modal5" class="modal">
+    <div class="modal-content">
+        <span class="close" data-modal="modal1">&times;</span>
+        <p>This is Modal 4!</p>
     </div>
 </div>
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-<h2>Projets</h2>
+<h2 id="section-projet">Projets</h2>
 
 <div class="Vertical-projets">
 
@@ -361,28 +391,30 @@
 
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
-<h2>Contact</h2>
+<h2 id="section-Contact">Contact</h2>
+<br><br><br><br><br>
 
 <div class="Contact">
     <div class="Contact-gauche">
+        <h2>Informations</h2>
         <div class="contact-horizontal">
-            <i class="fas fa-phone"> </i>
-                Phone :
-            <span>(438) 923-6046</span>
+            <i class="fas fa-phone"> Phone : <span>(438) 923-6046</span> </i>
+                
+            
             
         </div>
 
         <div class="contact-horizontal">
-            <i class="fas fa-envelope"> Email :</i>
-            <span>jgabriel.lerouge@gmail.com</span>
+            <i class="fas fa-envelope"> Email :  <span>jgabriel.lerouge@gmail.com</span></i>
+            
             
         </div>
 
         <div class="social">
                         
-            <a href="https://www.linkedin.com/in/jean-gabriel-lerouge-583978190/"><i class="fa-brands fa-linkedin"></i></a>
+           <a href="https://www.linkedin.com/in/jean-gabriel-lerouge-583978190/"><i class="fa-brands fa-linkedin"></i></a>
 
-            <i class="fa fa-github"></i>
+            <i class="fa fa-github"></i></p>
             
             
         </div>
@@ -391,18 +423,18 @@
 
     </div>
     <div class="Contact-droite">
+        <h2>Envoyez-moi un message</h2>
         <div class="formulaire">
             <form action="">
                 
                 <input type="text" id="fname" name="fname" value="Name"><br><br>
                 <div class="form-con">
-                    <input type="text" id="lname" name="lname" value="Email">
-                
+                    <input type="text" id="lname" name="lname" value="">
                     <input type="text" id="fname" name="fname" value="Subject"><br>
             </div>
                 <br>
-                <input type="emai" id="fname" name="fname" value="Message"><br>
-                <input type="submit" value="Envoyer">
+                <input type="emai" id="fname" name="fname" value="Message"><br><br>
+                <button class="btnenvoi" type="submit" value="Envoyer">Envoyer  <i class="fas fa-paper-plane"></i></button>
             </form> 
         </div>
 </div>
@@ -423,14 +455,57 @@
         togglebtn.addEventListener("click", function(){
             this.classList.toggle("click");
             nav.classList.toggle("open");
-        })
+        });
 
         var typed=new Typed(".input",{
             strings:["Frontend Developer","Full-stack Developer","Web Developer"],
             typedSpeed:80,
             backSpeed:85,
             loop:true
-        })
+        });
+
+    $(document).ready(function(){
+        $('#HomeLien').click(function() {
+            $('html, body').animate({
+                scrollTop: $("#section-profil").offset().top
+            }, 1000);
+        });
+
+        $('#MoiLien').click(function() {
+            $('html, body').animate({
+                scrollTop: $("#section-moi").offset().top
+            }, 1000);
+        });
+
+        $('#CompétencesLien').click(function() {
+            $('html, body').animate({
+                scrollTop: $("#section-Competences").offset().top
+            }, 1000);
+        });
+
+        $('#ServiceLien').click(function() {
+            $('html, body').animate({
+                scrollTop: $("#section-Service").offset().top
+            }, 1000);
+        });
+
+        $('#ProjetLien').click(function() {
+            $('html, body').animate({
+                scrollTop: $("#section-projet").offset().top
+            }, 1000);
+        });
+
+        $('#ContactLien').click(function() {
+            $('html, body').animate({
+                scrollTop: $("#section-Contact").offset().top
+            }, 1000);
+        });
+
+        
+});
+
+   
+
 
 
        
