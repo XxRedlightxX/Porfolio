@@ -3,11 +3,16 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 1000px;
-    height: 600px;
-    background: #e72929;
+    width: 78%;
+    height: 800px;
+    background: transparent;
     box-shadow: 0 30px 50px #dbdbdb;
+    margin-bottom: -350px;
+   border-radius: 10px;
+  
+    
 }
+
 
 .containeurr .slide .items{
     width: 200px;
