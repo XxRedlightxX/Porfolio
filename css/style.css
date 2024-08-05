@@ -349,7 +349,7 @@ h2 {
     margin-bottom: 80px;
 }
 
-.edu-list .item {
+.edu-list .degree {
     background: var(--card-bg-color);
     box-shadow: var(--box-shadow);
     border-bottom: 3px solid var(--second-color);
@@ -366,25 +366,25 @@ h2 {
 }
 
 
-.edu-list .item .year{
+.edu-list .degree .year{
     font-size: var(--small-font-size);
     margin-bottom: 5px;
 
 }
 
-.edu-list .item p {
+.edu-list .degree p {
     color : var(--third-color);
     font-size: var(--small-font-size);
 }
 
-.edu-list .item p span {
+.edu-list .degree p span {
     color : var(--third-color);
     font-size: var(--small-font-size);
 
 }
 
 
-.edu-list .item p span {
+.edu-list .degree p span {
     color : var(--first-color);
     font-size: var(--normal-font-size);
     font-weight: 500;
@@ -576,6 +576,7 @@ h2 {
     z-index: 1; /* Sit on top */
     left: 0;
     top: 0;
+    
     width: 100%; /* Full width */
     height: 100%; /* Full height */
     overflow: auto; /* Enable scroll if needed */
