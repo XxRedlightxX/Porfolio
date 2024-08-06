@@ -10,15 +10,16 @@
     
     <script src="/js/pop.js"></script>
     
-    <script src="/js/app.js"></script>
+   
     <!----Font awesome cdn  font icon css -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
 </head>
 
 <body >
-   
+  
     <div class="j" id="particles-js"></div>
      <div class="hero-header" id="section-profil">
         
@@ -53,7 +54,8 @@
                  </div>
                  <div class="hero-text">
                     <h5>Hi I'm <span class="input">Frontend Developer</span></h5>
-                    <h1>Jean-Gabriel Lerouge</h1>
+                    <h1>Jean-Gabriel <a style="color: #ac0a0a">Lerouge</a></h1>
+                    <script src="/js/animation.js"></script>
                     <p> Un jeune développeur passionné, déterminé 
                     </p>
                     
@@ -85,7 +87,7 @@
      
      <div class="lol" >
         <div class="bruh">
-            <img src="images/main_photo.jpg" alt="profile pic">
+            <img src="images/moi2.png" alt="profile pic">
         </div>
        
     
@@ -131,11 +133,7 @@
             <h1 class="section-title-01"></h1>
             <h1 class="section-title-02"></h1>
             <div class="content">
-                <div class="skills-description">
-                    <p>My hands-on experience in building a medical appointment platform, a mobile application to reduce food waste, and a social networking website demonstrates my proficiency 
-                        in languages such as Java, Kotlin, C#, JavaScript, and technologies including SpringBoot, 
-                        Angular, and React, which aligns well with the requirements of the position
-                    </p>
+                
                 </div>
                 <div class="skills-info education-all">
                     <div class="education">
@@ -283,25 +281,30 @@
 <br><br><br><br><br><br><br><br>
 <h2 id="section-Service">Services</h2>
 <div class="Vertical-service">
-
+    
     <div class="Horizontal-service">
+        
         <div class="service">
+            <script src="/js/animation.js"></script>
             <img src="/images/mobile.png">
             <p>Android </p>
             <button class="openModal" data-modal="modal1"> Learn more</button>
             
          </div>
          <div class="service">
+            <script src="/js/animation.js"></script>
             <img src="/images/mobile.png">
             <p>Android </p>
             <button class="openModal" data-modal="modal2"> Learn more</button>
          </div>
          <div class="service">
+            <script src="/js/animation.js"></script>
             <img src="/images/design.png">
             <p>Web Developpement </p>
             <button class="openModal"data-modal="modal3"> Learn more</button>
          </div>
          <div class="service">
+            <script src="/js/animation.js"></script>
             <img src="/images/program.png">
             
             <p>Infographie 2D 3D<p>
@@ -320,8 +323,14 @@
 <div id="modal1" class="modal">
     <div class="modal-content">
         <span class="close" data-modal="modal1">&times;</span>
-        <img src="images/moi.jpg" alt="profile pic">
-        <p>En tant que compagnie de lutte contre le gaspillage alimentaire, nous avons besoin d’avoir une application qui permet aux clients de pouvoir consulter la liste des aliments qui sont proches d'expirer mis en vente par les épiceries. Les aliments peuvent etre ramasser par le client ou livrés par un livreur chez le client. Afin que nous puissions faire un impact pour le gaspillage de la nourriture et aider les gens ayant besoin d’un accès encore plus facile à de la nourriture abordable.</p>
+        <h3>Developer Android</h3>
+        <img src="images/game.png" alt="profile pic">
+        
+        <p>En tant que compagnie de lutte contre le gaspillage alimentaire, nous avons besoin d’avoir une application 
+            qui permet aux clients de pouvoir consulter la liste des aliments qui sont proches d'expirer mis en vente par les épiceries.
+             Les aliments peuvent etre ramasser par le client ou livrés par un livreur chez le client.
+              Afin que nous puissions faire un impact pour le gaspillage de la nourriture et aider les gens ayant besoin
+               d’un accès encore plus facile à de la nourriture abordable.</p>
     </div>
 </div>
 
@@ -367,7 +376,11 @@
         <div class="items" style="background-image: url(/images/2539381-reseaux-sociaux.jpg);">
             <div class="contents">
                 <div class="name">Switzerland</div>
-                <div class="des">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab, eum!</div>
+                <div class="des">En tant que compagnie de lutte contre le gaspillage alimentaire, nous avons besoin d’avoir une application 
+                    qui permet aux clients de pouvoir consulter la liste des aliments qui sont proches d'expirer mis en vente par les épiceries.
+                     Les aliments peuvent etre ramasser par le client ou livrés par un livreur chez le client.
+                      Afin que nous puissions faire un impact pour le gaspillage de la nourriture et aider les gens ayant besoin
+                       d’un accès encore plus facile à de la nourriture abordable.</div>
                 <button>See More</button>
             </div>
         </div>
@@ -423,7 +436,9 @@
 <br><br><br><br><br>
 
 <div class="Contact">
+   
     <div class="Contact-gauche">
+        <script src="/js/animation.js"></script>
         <h2>Informations</h2>
         <div class="contact-horizontal">
             <i class="fas fa-phone"> Phone : <span>(438) 923-6046</span> </i>
@@ -455,6 +470,7 @@
         <div class="formulaire">
            
             <form action="">
+                
                 <h2>Envoyez-moi un message</h2><br><br>
                 <input type="text" id="fname" name="fname" value="Name"><br><br>
                 <div class="form-con">
@@ -470,6 +486,29 @@
 
     </div>
 </div>
+
+<footer>
+    <div class="footerContainer">
+        <div class="socialIcons">
+            <a href="https://www.linkedin.com/in/jean-gabriel-lerouge-583978190/"><i class="fa-brands fa-linkedin"></i></a>
+            <a><i class="fa fa-github"></i></a>
+            
+        </div>
+        <div class="footerNav">
+            <ul> <li><strong><a href="#" id="HomeLien">Home</a></strong></li>
+                <li><strong><a href="#"  id="MoiLien">About</a></strong></li>
+                <li><strong><a href="#"  id="CompétencesLien">Skills</a></strong></li>
+                <li><strong><a href="#" id="ServiceLien">Services</a></strong></li>
+                <li><strong><a href="#" id="ProjetLien">Projets</a></strong></li>
+                <li><strong><a href="#"  id="ContactLien">Contact</a></strong></li>
+            </ul>
+        </div>
+        
+    </div>
+    <div class="footerBottom">
+        <p>Tous les droits réservées &copy; à  <span class="designer">Jean-Gabriel</span></p>
+    </div>
+</footer>
 
 
 

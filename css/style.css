@@ -149,6 +149,15 @@ nav .navlinks li{
 nav .navlinks li a{
      color: black;
      margin-right: 2.5rem;
+    
+     transition: 0.5s;
+ 
+}
+
+nav .navlinks li a:hover{
+    opacity: 1;
+    color: rgb(177, 6, 6);
+    margin-right: 2.5rem;
 }
 .container {
     display: flex;
@@ -184,15 +193,15 @@ nav .navlinks li a{
     flex-direction: column;
 }
 .hero-text h5{
-    color:#e5e5e5;
+    color:#0c0909;
     font-size: 14px;
 }
 .hero-text h5 span{
-    color:blue;
+    color:var(--second-color);
     font-size: 16px;
 }
 .hero-text h1{
-    color: red;
+    color: rgb(5, 1, 1);
     font-size: 3rem;
 }
 .hero-text p{
@@ -229,7 +238,7 @@ nav .navlinks li a{
     z-index: 2;
 }
 .btn.active{
-    border-color: #007ced;
+    border-color: var(--second-color);
 }
 .hero-text .social i{
     color: black;
@@ -239,7 +248,7 @@ nav .navlinks li a{
     font-size: 38px;
 }
 .hero-text .social i:hover{
-    color:#007ced;
+    color :var(--second-color);
     transform: rotate(360deg);
 }
 /* Section -------------------------------*/
@@ -375,6 +384,7 @@ h2 {
 
 .education-all {
     margin-bottom: 80px;
+    
 }
 
 .edu-list .degree {
@@ -418,9 +428,7 @@ h2 {
     font-weight: 500;
 }
 
-.bars {
-    gap: 30em;
-}
+
 
 
 
@@ -433,7 +441,8 @@ h2 {
     border-radius: 6px;
     transition: .3 ease;
     border-bottom: #6a59d1;
-    list-style-type: none
+    list-style-type: none;
+    
     
 }
 
@@ -494,10 +503,11 @@ h2 {
     align-items: center;
 }
 
-.Horizontal-service {
+ .Horizontal-service {
     display: flex;
     gap: 5em;
     margin: 20px;
+    
 }
 
 
@@ -506,7 +516,9 @@ h2 {
     margin-top: 20px;
 }
 
-.service {
+
+
+ .service {
     border-style: solid;
     border-color: var(--second-color);
     border-radius: 5px;
@@ -516,6 +528,8 @@ h2 {
     width:  300px;
     background-color: #fff;
     margin-top: 40px;
+  
+    
     
 }
 
@@ -629,7 +643,7 @@ h2 {
     z-index: 1; /* Sit on top */
     left: 0;
     top: 0;
-    
+    text-align: center;
     width: 100%; /* Full width */
     height: 100%; /* Full height */
     overflow: auto; /* Enable scroll if needed */
@@ -641,14 +655,21 @@ h2 {
 .modal-content {
     background-color: #fefefe;
     margin: 15% auto; /* 15% from the top and centered */
-    padding: 20px;
+    padding:  50px;
     border: 1px solid #888;
-    width: 80%; /* Could be more or less, depending on screen size */
+    border-radius: 10px;
+    width: 50%; /*  be more or less, depending on screen size */
+}
+
+.modal-content h3 {
+    text-align: left;
+    
 }
 
 .modal-content img {
-    height: 150px;
-    width: 150px;
+    height: 20%;
+    width: 100%;
+    padding-bottom: 30px;
 }
 
 /* The Close Button */
@@ -694,6 +715,7 @@ h2 {
     margin-top: 10px;
     height: 550px;
     width: 550px;
+    visibility: hidden;
    
 }
 
@@ -775,7 +797,7 @@ textarea {
     color: white;
     font-size: 16px;
     cursor: pointer;
-    margin: 10px;
+    margin-right: 8px;
 }
 
 input {
@@ -783,7 +805,95 @@ input {
 }
 
 .btnenvoi:hover {
-    background-color: #007ced;
+    background-color: var(--second-color);
+}
+
+/*****Foooter*/
+footer{
+    background-color: #111;
+
+    margin-top: 100px;
+}
+.footerContainer{
+    width: 100%;
+    padding: 70px 30px 20px ;
+}
+.socialIcons{
+    display: flex;
+    justify-content: center;
+}
+.socialIcons a{
+    text-decoration: none;
+    padding:  10px;
+    background-color: white;
+    margin: 10px;
+    border-radius: 50%;
+}
+.socialIcons a i{
+    font-size: 2em;
+    color: black;
+    opacity: 0,9;
+}
+
+.socialIcons a:hover{
+    
+    transition: 0.5s;
+    color :var(--second-color);
+    transform: rotate(360deg);
+}
+.socialIcons a:hover i{
+    color: var(--second-color);
+    transition: 0.5s;
+}
+.footerNav{
+    margin: 30px 0;
+}
+.footerNav ul{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+.footerNav ul li a{
+    color:white;
+    margin: 20px;
+    text-decoration: none;
+    font-size: 1.3em;
+    opacity: 0.7;
+    transition: 0.5s;
+
+}
+.footerNav ul li a:hover{
+    opacity: 1;
+    color: var(--second-color);
+}
+.footerBottom{
+    background-color: #000;
+    padding: 20px;
+    text-align: center;
+}
+.footerBottom p{
+    color: white;
+}
+.designer{
+    opacity: 0.7;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 400;
+    margin: 0px 5px;
+}
+@media (max-width: 700px){
+    .footerNav ul{
+        flex-direction: column;
+    } 
+    .footerNav ul li{
+        width:100%;
+        text-align: center;
+        margin: 10px;
+    }
+    .socialIcons a{
+        padding: 8px;
+        margin: 4px;
+    }
 }
 
 
@@ -795,15 +905,12 @@ input {
 
 
 
-
-
-/* Respnosiv design & displaying navbar for small screen */
 @media(max-width:930px)
 {
     nav .togglebtn{
         display: initial;
     }
-    /* for toggle button**/
+    
     .click {
         top:45px;
     }
