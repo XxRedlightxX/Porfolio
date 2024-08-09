@@ -510,7 +510,7 @@ h2 {
 
  .Horizontal-service {
     display: flex;
-    gap: 5em;
+    gap: 4em;
     margin: 20px;
     
 }
@@ -887,20 +887,17 @@ footer{
     margin: 0px 5px;
 }
 
-
-
-@media (max-width : 1450px) {
+@media (max-width : 1550px) {
     .lol {
         margin-left: 50px;
        
     }
     
     .this {
-        margin-right: 160px;
-        padding-right:160px ;
+        border-style: dashed;
+        padding-right: 120px;
+        margin: 0;
         
-        
-        height: 83vh;
     }
     
 
@@ -910,6 +907,34 @@ footer{
 
     .Contact {
         margin-left: right;
+    }
+
+}
+
+
+
+
+@media (max-width : 1450px) {
+    .lol {
+        margin-left: 50px;
+       
+    }
+    
+    .this {
+        margin: 0;
+    }
+    
+
+    .Horizontal-service {
+        gap : 2em
+    }
+
+    .Contact {
+        margin-left: right;
+    }
+
+    .this {
+        margin-bottom: 110px;
     }
 
 }
@@ -936,7 +961,7 @@ footer{
        
     }
     .bruh img {
-        border-style: dashed;
+       
         margin-left: 170px;
         width: 100%;
         margin-bottom: 10px;
@@ -944,7 +969,8 @@ footer{
         
     }
 
-    .test {
+    .this {
+        margin: 0;
         
     }
 
@@ -986,8 +1012,8 @@ footer{
     /******* Competences */
 
    section {
-        display: inline;
-        border-style: dashed;
+        /*display: inline;*/
+       
         margin-bottom: 230px;
    }
     
@@ -1044,6 +1070,20 @@ footer{
 
 
 @media (max-width: 700px){
+    .Contact-gauche {
+        margin: 0;
+        border-style: dashed;
+        margin-left: -55px;
+       
+    }
+
+    .Contact-droite {
+        margin-left: -55px;
+        height: fit-content;
+        
+        border-style: dashed;
+    }
+
     .footerNav ul{
         flex-direction: column;
     } 
@@ -1055,6 +1095,14 @@ footer{
     .socialIcons a{
         padding: 8px;
         margin: 4px;
+    }
+
+    .moi-text p {
+        text-align: center;
+        padding-left: px;
+        border-style: dashed;
+        margin-right: 60px;
+        
     }
 }
 
@@ -1111,6 +1159,45 @@ footer{
         right:0;
     }
 
+    .about-me {
+      margin: 0;
+      padding: 0;
+    }
+
+    .test h3 {
+       
+        padding-right: 100px;
+    }
+
+    .this {
+     
+    }
+
+
+    /***Contact**/
+    .Contact  {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+        margin-left: 180px;
+    }
+
+    .Contact-gauche {
+        margin-top: 20px;
+        width: 480px;
+    }
+
+    .Contact-droite {
+        
+    }
+
+
+
+
+
+
 
 }
 @media(max-width:768px)
@@ -1122,4 +1209,69 @@ footer{
     .hero-text{
         padding:40px 0px;
     }
+
+    .lol {
+      display: flex;
+      flex-direction: column;
+      display: inline;
+      margin-right: 210px;
+      height: 720px;
+      width: 520px;
+      margin-bottom: 140px;
+     
+
+
+       
+    }
+
+    .bruh img{
+       
+        
+        margin-left: 130px;
+        width: 375px;
+    }
+
+    .moi-text {
+        float :right
+    }
+
+    .about-me {
+        width: 100%;
+        border-style: 100%;
+    }
+
+    .lol h3 {
+        
+        margin-left: 25px;
+        padding-left: 40px;
+    }
+
+
+    /***competences */
+
+    .this {
+        border-style: dotted;
+        margin: 80;
+        padding:0;
+    }
+
+    .Contact  {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+        margin-left: 140px;
+    }
+
+    .Contact-gauche {
+        margin-top: 20px;
+        width: 480px;
+    }
+
+    .Contact-droite {
+        
+    }
+
+
 }
