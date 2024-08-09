@@ -267,6 +267,7 @@ nav .navlinks li a:hover{
 
 
 
+
 .test {
     display: flex;
     flex-direction: column;
@@ -341,6 +342,14 @@ h2 {
     
 }
 
+.moi-text p {
+    
+    margin-left: 60px;
+    margin-right: 110px;
+    font-size: larger;
+    text-align: left;
+}
+
 
 /********************************* Skills*/
 
@@ -395,13 +404,9 @@ h2 {
     margin-top: 15px;
     border-radius: 6px;
     transition: .3s ease;
+    list-style-type: none;
 }
 
-.skills-description {
-   margin-left: 230px ;
-    column-fill: auto;
-    border-style: dashed;
-}
 
 
 .edu-list .degree .year{
@@ -520,7 +525,7 @@ h2 {
 
  .service {
     border-style: solid;
-    border-color: var(--second-color);
+    
     border-radius: 5px;
     text-align: center;
     box-shadow: var(--box-shadow);
@@ -715,7 +720,7 @@ h2 {
     margin-top: 10px;
     height: 550px;
     width: 550px;
-    visibility: hidden;
+    
    
 }
 
@@ -881,6 +886,163 @@ footer{
     font-weight: 400;
     margin: 0px 5px;
 }
+
+
+
+@media (max-width : 1450px) {
+    .lol {
+        margin-left: 50px;
+       
+    }
+    
+    .this {
+        margin-right: 160px;
+        padding-right:160px ;
+        
+        
+        height: 83vh;
+    }
+    
+
+    .Horizontal-service {
+        gap : 2em
+    }
+
+    .Contact {
+        margin-left: right;
+    }
+
+}
+
+
+@media (max-width : 1200px) {
+
+    #section-moi {
+        
+
+    }
+    .about-me {
+        width: 50%;
+        height: 50%;
+        margin-left :50px;
+        width: fit-content;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+       
+
+        
+       
+    }
+    .bruh img {
+        border-style: dashed;
+        margin-left: 170px;
+        width: 100%;
+        margin-bottom: 10px;
+    
+        
+    }
+
+    .test {
+        
+    }
+
+
+    .lol  {
+        margin-right: 50px;
+    }
+
+    .about-me > div {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .about-me img  {
+        float:inline-start;
+    }
+
+    
+
+
+
+    .bruh img {
+        width: 400px;
+        height: 400px;
+    }
+
+    .d {
+        width: 75%;
+        height: 75%;
+    }
+    
+    
+    
+
+    .Horizontal-service {
+        gap : 2em
+    }
+
+    /******* Competences */
+
+   section {
+        display: inline;
+        border-style: dashed;
+        margin-bottom: 230px;
+   }
+    
+
+
+
+
+    /****service **/
+    .section-service h2 {
+        border-style: groove;
+        
+        
+    }
+
+    .section-service {
+        margin-top: 708px;
+        border-style: dotted;
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    .Horizontal-service {
+        display: flex;
+        flex-direction: column;
+        gap : 1em;
+    }
+
+    /*****Contact**/
+
+    .Contact {
+        height: fit-content;
+        width: fit-content;
+        gap : 5em;
+    }
+
+    form  {
+        height: fit-content;
+        width: fit-content;
+    }
+
+    
+
+  
+
+    
+
+    
+}
+
+
+
+
+
+
 @media (max-width: 700px){
     .footerNav ul{
         flex-direction: column;
@@ -895,12 +1057,6 @@ footer{
         margin: 4px;
     }
 }
-
-
-
-
-
-
 
 
 
@@ -937,7 +1093,7 @@ footer{
         bottom: 0;
         width: 60%;
         height: 100vh;
-        background-color: #222;
+        background-color: var(--body-bg-color);
         z-index: 3;
         box-shadow: 5px 13px 30px rgba(0,0,0,0.1);
         transition: 0.5s;
@@ -954,6 +1110,8 @@ footer{
     nav .navlinks.open{
         right:0;
     }
+
+
 }
 @media(max-width:768px)
 {
