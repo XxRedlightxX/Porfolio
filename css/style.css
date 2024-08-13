@@ -87,15 +87,19 @@ h2 {
     padding: 0 20px;
 }
 header{
+    /*padding: 40px 0 30px;*/
     padding: 40px 0 30px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
     background-color: transparent;
+   
+    
     
    
 }
+
 .logo{
     display: inline-flex;
     justify-content: center;
@@ -495,8 +499,66 @@ h2 {
 }
 
 .bar .JavaScript:before {
-    width: 85%;
+    width: 80%;
 }
+
+.bar .React:before {
+    width: 88%;
+}
+
+.bar .TypeScript:before {
+    width: 90%;
+}
+
+.bar .Angular:before {
+    width: 90%;
+}
+
+.bar .Kotlin:before {
+    width: 95%;
+}
+
+.bar .Java:before {
+    width: 98%;
+}
+
+.bar .Python:before {
+    width: 80%;
+}
+
+.bar .PHP:before {
+    width: 80%;
+}
+
+.bar .C:before {
+    width: 90%;
+}
+
+.bar .sql:before {
+    width: 90%;
+}
+
+.bar .sql:before {
+    width: 90%;
+}
+
+.bar .git:before {
+    width: 95%;
+}
+
+.bar .uml:before {
+    width: 95%;
+}
+
+.bar .agile:before {
+    width: 95%;
+}
+
+.bar .dev:before {
+    width: 75%;
+}
+
+
 
 
 /************ Service*/
@@ -510,7 +572,7 @@ h2 {
 
  .Horizontal-service {
     display: flex;
-    gap: 4em;
+    gap: 5em;
     margin: 20px;
     
 }
@@ -894,7 +956,7 @@ footer{
     }
     
     .this {
-        border-style: dashed;
+        
         padding-right: 120px;
         margin: 0;
         
@@ -906,7 +968,9 @@ footer{
     }
 
     .Contact {
-        margin-left: right;
+        padding-left: 60px;
+        padding-right: 60px;
+        
     }
 
 }
@@ -1023,14 +1087,14 @@ footer{
 
     /****service **/
     .section-service h2 {
-        border-style: groove;
+        
         
         
     }
 
     .section-service {
         margin-top: 708px;
-        border-style: dotted;
+        
         display: flex;
         flex-direction: column;
     }
@@ -1069,10 +1133,17 @@ footer{
 
 
 
-@media (max-width: 700px){
+@media (max-width: 800px){
+
+
+    .skills-info {
+        display: flex;
+        flex-direction: column;
+    }
+
     .Contact-gauche {
         margin: 0;
-        border-style: dashed;
+        
         margin-left: -55px;
        
     }
@@ -1081,8 +1152,9 @@ footer{
         margin-left: -55px;
         height: fit-content;
         
-        border-style: dashed;
+        
     }
+
 
     .footerNav ul{
         flex-direction: column;
@@ -1100,7 +1172,7 @@ footer{
     .moi-text p {
         text-align: center;
         padding-left: px;
-        border-style: dashed;
+        
         margin-right: 60px;
         
     }
@@ -1219,9 +1291,6 @@ footer{
       width: 520px;
       margin-bottom: 140px;
      
-
-
-       
     }
 
     .bruh img{
@@ -1250,7 +1319,7 @@ footer{
     /***competences */
 
     .this {
-        border-style: dotted;
+        
         margin: 80;
         padding:0;
     }

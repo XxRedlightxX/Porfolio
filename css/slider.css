@@ -63,11 +63,27 @@
     left: 100px;
     width: 300px;
     text-align: left;
-    color: #eee;
+    color: black;
     transform: translate(0, -50%);
     font-family: system-ui;
     display: none;
 }
+
+.items .name {
+    background-color: white;
+    padding-left: 10px;
+    border-radius: 10px;
+}
+
+.des {
+    color: black;
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    font-size: large;
+    
+}
+
 
 
 .slide .items:nth-child(2) .contents{
@@ -152,3 +168,5 @@
     background: #ababab;
     color: var(--second-color);
 }
+
+
