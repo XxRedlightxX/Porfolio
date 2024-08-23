@@ -9,17 +9,20 @@
     <link rel="stylesheet" href="/css/slider.css">
     
     <script src="/js/pop.js"></script>
+   
     
    
     <!----Font awesome cdn  font icon css -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://unpkg.com/scrollreveals"></script>
+    
    
 </head>
 
 <body >
-    <script src="https://unpkg.com/scrollreveals"></script>
+    
     <div class="j" id="particles-js"></div>
      <div class="hero-header" id="section-profil">
         
@@ -44,10 +47,16 @@
                         <li><strong><a href="#" id="ServiceLien">Services</a></strong></li>
                         <li><strong><a href="#" id="ProjetLien">Projets</a></strong></li>
                         <li><strong><a href="#"  id="ContactLien">Contact</a></strong></li>
+                       
+                        
                     </ul>
+                    
+                    </ul>
+                    <img src="/images/moon.png" id="icone"> <script src="/js/theme.js"></script>
                 </nav>
+                
             </header>
-            
+          
             <div class="container">
                 
                  <div class="hero-pic">
@@ -56,10 +65,10 @@
                  <div class="hero-text">
                     <h5>Hi I'm <span class="input">Frontend Developer</span></h5>
                     <h1>Jean-Gabriel <a style="color: #ac0a0a">Lerouge</a></h1>
-                    <script src="/js/animation.js"></script>
+                    
                     <p>Un jeune développeur web et mobile passionné par la programmation, les sports et l'apprentissage 
                     </p>
-                    
+                   
                     <div class="btn-group">
                        <a href="#" class="btn active">Download CV</a>
                        <a href="#" class="btn">Contact</a>
@@ -302,26 +311,26 @@
     <div class="Horizontal-service">
         
         <div class="service">
-            <script src="/js/animation.js"></script>
+            
             <img src="/images/mobile-development.png">
             <p>Mobile Developpement </p>
             <button class="openModal" data-modal="modal1"> Learn more</button>
             
          </div>
          <div class="service">
-            <script src="/js/animation.js"></script>
+            
             <img src="/images/web.jpg">
             <p>Web Developpement </p>
             <button class="openModal" data-modal="modal2"> Learn more</button>
          </div>
          <div class="service">
-            <script src="/js/animation.js"></script>
+            
             <img src="/images/gamedev.png">
             <p> Game Developpement</p>
             <button class="openModal"data-modal="modal3"> Learn more</button>
          </div>
          <div class="service">
-            <script src="/js/animation.js"></script>
+            
             <img src="/images/design.png">
             
             <p>Infographie 2D 3D<p>
@@ -481,10 +490,10 @@
 <h2 id="section-Contact">Contact</h2>
 <br><br><br><br><br>
 
+
 <div class="Contact">
-   
     <div class="Contact-gauche">
-        <script src="/js/animation.js"></script>
+        
         <h2>Informations</h2>
         <div class="contact-horizontal">
             <i class="fas fa-phone"> Phone : <span>(438) 923-6046</span> </i>
@@ -542,11 +551,11 @@
         </div>
         <div class="footerNav">
             <ul> <li><strong><a href="#" id="HomeLien">Home</a></strong></li>
-                <li><strong><a href="#"  id="MoiLien">About</a></strong></li>
-                <li><strong><a href="#"  id="CompétencesLien">Skills</a></strong></li>
+                <li><strong><a href="#"  id="MoiLien">À propos de moi</a></strong></li>
+                <li><strong><a href="#"  id="CompétencesLien">Compétences</a></strong></li>
                 <li><strong><a href="#" id="ServiceLien">Services</a></strong></li>
                 <li><strong><a href="#" id="ProjetLien">Projets</a></strong></li>
-                <li><strong><a href="#"  id="ContactLien">Contact</a></strong></li>
+                <li><strong><a href="#"  id="ContactLien">Contacdt</a></strong></li>
             </ul>
         </div>
         
@@ -619,6 +628,18 @@
 
         
 });
+
+        ScrollReveal({ reset: 
+            true,
+            distance:'40px',
+            duration : 2500,
+            delay : 100,
+
+        });
+
+        ScrollReveal().reveal('.hero-text h1', {delay: 500, origin: "left"});
+        ScrollReveal().reveal('.service', { interval: 200,origin: "left" });
+        ScrollReveal().reveal('.Contact-gauche', { interval: 200,origin: "right" });
 
    
 

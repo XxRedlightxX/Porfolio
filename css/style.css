@@ -5,14 +5,65 @@
 /*****/
 
 :root {
-    --first-color : #0e2431;
-    /*--second-color : #6a59d1;*/
+    --first-color : white;
+    
     --second-color : #ac0a0a;
     --third-color : #777;
-
+    
 
     --body-bg-color : #fefefe;
-    --card-bg-color : #fff;
+
+     --card-bg-color : #fff;
+     --logo-color : black;
+     
+    --button : #333;
+
+    /*--first-color : black;
+    --second-color : #6a59d1;
+    --second-color : #ac0a0a;
+    --third-color : #777;
+    
+
+    --body-bg-color : black;
+    --card-bg-color : black;
+    --text-color : white;
+    --button : white;*/
+
+   
+    --modal-bg-color : #614fd0;
+    --bg-transparent-color : rgba(0,0,0,1);
+    --transparent-color-01 : rgba(0,0,0,0.1);
+    --transparent-color-02 : rgba(106,89,209,0.1);
+    --line-color : #d7d7d7;
+
+    --color-filter : invert(1);
+
+    --box-shadow : 0px 0px 20px rgb(0 0 0 / 10%);
+
+    --small-font-size : 0.9em;
+    --normal-font-size : 1em;
+
+    --scroll-bar-color : #c5cadf;
+    --scroll-thumb-color : #70768a;
+    --scroll-thumb-hover-color :#454f6b;
+
+
+   
+}
+
+.theme-noir {
+    --first-color : #060609;
+  
+    --second-color : #ac0a0a;
+    --third-color : #777;
+    
+    --logo-color : white;
+    --body-bg-color : #060609;
+    --card-bg-color : #060609;
+    --text-color : white;
+    --button : white;
+
+   
     --modal-bg-color : #614fd0;
     --bg-transparent-color : rgba(0,0,0,1);
     --transparent-color-01 : rgba(0,0,0,0.1);
@@ -40,13 +91,16 @@
 }
 body{
     overflow-x: hidden;
+    background: var(--first-color);
+    
    
     
 }
 
 h2 {
     font-size: 2em;
-    color: #333;
+    /*color: #333;*/
+    color: var(--text-color);
     font-family:'Pacifico';
     
     font-size: 60px;
@@ -76,7 +130,7 @@ h2 {
     width:100%;
     height: 100%;
     min-height: 100vh;
-    background: white;
+    background: var(--card-bg-color);
     position: relative;
     z-index: 1;
 }
@@ -110,7 +164,7 @@ header{
     width:45px;
     background-color: #e40a0a;
     border-radius: 50%;
-    color:#fff;
+    color: var(--card-bg-color);
     font-weight: 700;
     font-size: 1.5rem;
     padding: 10px;
@@ -122,7 +176,7 @@ header{
 .logo .logo-text{
     font-size: 24px;
     font-weight: 500;
-    color:black;
+    color:var(--text-color);
 }
 nav .togglebtn{
     width: 35px;
@@ -151,12 +205,18 @@ nav .navlinks li{
     display: inline-block;
 }
 nav .navlinks li a{
-     color: black;
+     color: var(--text-color);
      margin-right: 2.5rem;
     
      transition: 0.5s;
  
 }
+
+nav img {
+    width: 30px;
+    
+    cursor: pointer;
+}  
 
 nav .navlinks li a:hover{
     opacity: 1;
@@ -197,7 +257,7 @@ nav .navlinks li a:hover{
     flex-direction: column;
 }
 .hero-text h5{
-    color:#0c0909;
+    color:var(--text-color);
     font-size: 14px;
 }
 .hero-text h5 span{
@@ -205,11 +265,12 @@ nav .navlinks li a:hover{
     font-size: 16px;
 }
 .hero-text h1{
-    color: rgb(5, 1, 1);
+    /*color: rgb(5, 1, 1);*/
+    color : var(--text-color);
     font-size: 3rem;
 }
 .hero-text p{
-    color:black;
+    color:var(--text-color);
 
 }
 .btn-group{
@@ -217,8 +278,8 @@ nav .navlinks li a:hover{
 }
 .btn-group .btn{
     border-color: #d5d5d5;
-    color:#fff;
-    background-color: #333;
+    color: var(--card-bg-color);
+    background-color: var(--button);
     padding: 12px 25px;
     margin: 5px 0px;
     margin-right:7px;
@@ -230,8 +291,8 @@ nav .navlinks li a:hover{
 
 .btn-group a{
     border-color: #d5d5d5;
-    color:#fff;
-    background-color: #333;
+    color: var(--card-bg-color);
+    background-color: var(--button);
     padding: 12px 25px;
     margin: 5px 0px;
     margin-right:7px;
@@ -242,10 +303,10 @@ nav .navlinks li a:hover{
     z-index: 2;
 }
 .btn.active{
-    border-color: var(--second-color);
+    border-color: var(--text-color);
 }
 .hero-text .social i{
-    color: black;
+    color: var(--logo-color);
     font-size: 18px;
     margin-right: 10px;
     transition: 0.5s;
@@ -279,7 +340,7 @@ nav .navlinks li a:hover{
 
 }
 h3 { 
-    
+    color : var(--text-color);
     font-size: 2;   
 }
 
@@ -301,7 +362,8 @@ h2 {
 
 
 .Gauche  {
-    
+    border-color: var(--text-color);
+    background-color: var(--text-color);
     display: inline-block;
     width: 300px;
     height: 200px;
@@ -321,7 +383,8 @@ h2 {
 }
 
 .Droite  {
-    
+    border-color: var(--text-color);
+    background-color: var(--text-color);
     display: inline-block;
     width: 300px;
     height: 200px;
@@ -347,7 +410,7 @@ h2 {
 }
 
 .moi-text p {
-    
+    color : var(--text-color);
     margin-left: 60px;
     margin-right: 110px;
     font-size: larger;
@@ -401,7 +464,7 @@ h2 {
 }
 
 .edu-list .degree {
-    background: var(--card-bg-color);
+    background: var(--text-color);
     box-shadow: var(--box-shadow);
     border-bottom: 3px solid var(--second-color);
     padding: 20px;
@@ -443,7 +506,7 @@ h2 {
 
 
 .bar {
-    background: var(--card-bg-color);
+    background: var(--text-color);
     box-shadow: var(--box-shadow);
     margin-bottom: 10px;
     padding: 20px;
@@ -761,8 +824,15 @@ h2 {
     justify-content: center;
     align-items: center;
     gap :20em;
+    
 
 }
+
+.Contact h2 {
+    color :#000;
+    
+}
+
 
 .Contact-gauche > div {
     padding-top: 60px;
@@ -954,11 +1024,13 @@ footer{
         margin-left: 50px;
        
     }
+   
     
     .this {
         
         padding-right: 120px;
         margin: 0;
+        border-style: dashed;
         
     }
     
@@ -978,15 +1050,15 @@ footer{
 
 
 
-@media (max-width : 1450px) {
+@media (max-width : 1450px) { 
     .lol {
         margin-left: 50px;
        
     }
     
-    .this {
-        margin: 0;
-    }
+  
+
+    
     
 
     .Horizontal-service {
@@ -1033,10 +1105,7 @@ footer{
         
     }
 
-    .this {
-        margin: 0;
-        
-    }
+   
 
 
     .lol  {
@@ -1282,12 +1351,17 @@ footer{
         padding:40px 0px;
     }
 
+    .about-me {
+        border-style: groove;
+        padding-left: 50px;
+    }
+
     .lol {
       display: flex;
       flex-direction: column;
       display: inline;
       margin-right: 210px;
-      height: 720px;
+      max-height:  720px;
       width: 520px;
       margin-bottom: 140px;
      
@@ -1295,9 +1369,10 @@ footer{
 
     .bruh img{
        
-        
-        margin-left: 130px;
-        width: 375px;
+        border-style: dotted;
+        margin-left: 120px;
+        max-width:  375px;
+        max-height: fit-content;
     }
 
     .moi-text {
@@ -1324,23 +1399,72 @@ footer{
         padding:0;
     }
 
-    .Contact  {
+    .Contact {
+        margin:0;
+        padding: 90px;
+        border-style: dashed;
+        min-height: 300px;
+     
+       
+    }
+
+
+
+   /* .Contact  {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        
-        margin-left: 140px;
+        padding: auto;
+        border-style: dashed;
+        margin-left: 20px;
+        margin : 0;
+        min-width: 100px;
+        padding: 20px;
     }
 
     .Contact-gauche {
         margin-top: 20px;
-        width: 480px;
+        min-height: 250px;
+        max-width: 360px;
+        margin: 0;
+        padding-right: 120px;
+        border-style:solid ;
     }
 
     .Contact-droite {
+        max-width: 580px;
+        min-height: 250px;
+        border-style: groove;
+        margin : 0;
+        padding: 0;
+        padding-right: 120px;
+    }
+
+    form {
         
     }
 
+
+}*/
+
+@media(max-width:520px)
+{
+    .Contact-gauche {
+        width: fit-content;
+        height: fit-content;
+    }
+
+
+
+}
+
+@media(max-width:400px)
+{
+    .Contact {
+        padding-left: 70px;
+    }
+
+    
 
 }
