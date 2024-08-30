@@ -1503,6 +1503,18 @@ footer{
         height: fit-content;
     }
 
+    .modal {
+        max-width: 100%;
+        max-height: 50%;
+    }
+
+    .modal-content {
+        max-width: 50%;
+        min-height: 20%;
+        margin : 2px;
+    }
+
+
 
 
 }
