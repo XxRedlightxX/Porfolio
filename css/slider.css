@@ -39,6 +39,8 @@
 }
 
 
+
+
 .slide .items:nth-child(3){
     left: 50%;
 }
@@ -67,12 +69,16 @@
     transform: translate(0, -50%);
     font-family: system-ui;
     display: none;
+    border-color:red;
 }
 
 .items .name {
     background-color: white;
+    /*padding-left: 10px;*/
     padding-left: 10px;
     border-radius: 10px;
+    border-color:red;
+   
 }
 
 .des {
@@ -83,8 +89,9 @@
     font-size: large;
     
 }
+/**/
 
-
+/**/
 
 .slide .items:nth-child(2) .contents{
     display: block;
@@ -168,5 +175,16 @@
     background: #ababab;
     color: var(--second-color);
 }
+
+@media(max-width:520px)
+{
+    .containeurr {
+        display: none;
+    }
+
+
+
+}
+
 
 
