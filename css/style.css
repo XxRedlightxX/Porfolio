@@ -60,7 +60,7 @@
     
     --logo-color : white;
     --body-bg-color : #060609;
-    --card-bg-color :  linear-gradient( rgb(30, 30, 34) 50%,to top, rgb(62, 66, 66) 100%);
+    --card-bg-color :  linear-gradient( rgb(30, 30, 34) 50%,to top, rgb(107, 112, 112) 100%);
     --text-color : white;
     --button : white;
 
@@ -1375,6 +1375,18 @@ footer{
         display: none;
     }
 
+    .modal {
+        max-width: 100%;
+        max-height: 50%;
+    }
+
+    .modal-content {
+        max-width: 70%;
+        min-height: 20%;
+        margin : 2px;
+    }
+
+
     
 
 
@@ -1524,6 +1536,26 @@ footer{
         padding-left: 70px;
     }
 
+    
+
+}
+
+
+@media(max-width:376px)
+{
+
+    .d{
+        gap: 0.5em;
+        padding-left: 40px;
+        width: 68%
+    }
+
+    .moi-text {
+      
+        padding: 40px;
+    }
+
+   
     
 
 }

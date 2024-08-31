@@ -5,13 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     
-    <title>Responsive Portfolio Website Design</title>
+    <title>Porfolio </title>
    
     
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="/css/slider.css">
     
     <script src="/js/pop.js"></script>
+
+ 
    
     
    
@@ -19,8 +21,23 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://unpkg.com/scrollreveals"></script>
+    <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+
     
+    
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+
+<script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "FV_qioX7mSQ9ooOtm",
+      });
+   })();
+</script>
 </head>
 
 <body >
@@ -49,12 +66,13 @@
                         <li><strong><a href="#" id="ServiceLien">Services</a></strong></li>
                         <li><strong><a href="#" id="ProjetLien">Projets</a></strong></li>
                         <li><strong><a href="#"  id="ContactLien">Contact</a></strong></li>
+                        <li><a><img src="/images/moon.png" id="icone"> </a> <script src="/js/theme.js"></script></li>
                        
                         
                     </ul>
-                    
+                  
                     </ul>
-                    <img src="/images/moon.png" id="icone"> <script src="/js/theme.js"></script>
+                   
                 </nav>
                 
             </header>
@@ -68,12 +86,15 @@
                     <h5>Hi I'm <span class="input">Frontend Developer</span></h5>
                     <h1>Jean-Gabriel <a style="color: #ac0a0a">Lerouge</a></h1>
                     
+                    
+    
                     <p>Un jeune développeur web et mobile passionné par la programmation, les sports et à la recherche de nouveaux défis.
                     </p>
                    
                     <div class="btn-group">
                        <a href="/cv/Jean-Gabriel_Lerouge_CV(6.0)_-_Info[1] (1).docx" class="btn active">Download CV</a>
                        <a href="#" id="ContactLien" class="btn">Contact</a>
+                       
                     </div>
 
                     <div class="social">
@@ -93,11 +114,11 @@
      </div>
      
     
-    
+     <br><br>    
      <div class="about-me">
         
         <h2 id="section-moi" >À propos de moi</h2>
-        <br><br>   <br><br>    <br><br>
+        <br><br>     
     
         <div class="lol" >
             <div class="bruh">
@@ -237,7 +258,7 @@
                              <li class="bar">
                                 <div class="info">
                                  <span>PHP</span>
-                                 <span>95%</span>
+                                 <span>80%</span>
                                 </div>
                                 <div class="line PHP"></div>
                              </li>
@@ -472,7 +493,7 @@
 
 <div id="modal13" class="modal">
     <div class="modal-content">
-        <span class="close" data-modal="modal11">&times;</span>
+        <span class="close" data-modal="modal13">&times;</span>
         <h3>Bonhomme Pendu</h3>
         <img src="images/pendu.png" alt="profile pic">
         <p>Ce projet a été créé grâce à Android Studio, en utilisant l'architecture MVP et en étant codé en Kotlin avec SQLite comme base de données.</p>
@@ -694,18 +715,20 @@
         
         <div class="formulaire">
            
-            <form action="">
-                
+            <form id="formulaire">
                 <h2>Envoyez-moi un message</h2><br><br>
-                <input type="text" id="fname" name="fname" value="Name"><br><br>
+                <input type="text" id="name" name="name" placeholder="Name" required><br><br>
                 <div class="form-con">
-                    <input type="text" id="lname" name="lname" value="Email">
-                    <input type="text" id="fname" name="fname" value="Subject"><br>
-            </div>
+                    <input type="text" id="email_id" name="email_id" placeholder="Email" required>
+                    <input type="text" id="subject" name="subject" placeholder="Subject" required><br>
+                </div>
                 <br>
-                <input type="emai" id="fname" name="fname" value="Message"><br><br>
-                <button class="btnenvoi" type="submit" value="Envoyer">Envoyer  <i class="fas fa-paper-plane"></i></button>
-            </form> 
+                <input type="emai" id="message" name="message" placeholder="Message" required><br><br>
+                <button  class="btnenvoi" type="submit" value="Envoyer">Envoyer <i class="fas fa-paper-plane"></i></button>
+            </form>
+                
+            
+           
         </div>
     </div>
 
@@ -740,11 +763,21 @@
 
 
 
+    
 
+    
      
      <!---typed js for typing text effect-->
      <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js"></script>
      <script>
+
+
+        
+
+        
+
+
+
         /** creating button click show hide navbar **/
         var togglebtn=document.querySelector(".togglebtn");
         var nav=document.querySelector(".navlinks");
@@ -804,22 +837,37 @@
 
         ScrollReveal({ reset: 
             true,
-            distance:'40px',
+            distance:'20px',
             duration : 2500,
             delay : 100,
 
         });
 
-        ScrollReveal().reveal('.hero-text h1', {delay: 500, origin: "left"});
-        ScrollReveal().reveal('.service', { interval: 200,origin: "left" });
-        ScrollReveal().reveal('.Contact-gauche', { interval: 200,origin: "right" });
+        ScrollReveal().reveal('.hero-text h1 ', {delay: 200, origin: "right"});
+        ScrollReveal().reveal('.hero-pic', {delay: 200, origin: "left"});
+        ScrollReveal().reveal('.hero-text p', {delay: 200, origin: "right"});
 
-   
+        ScrollReveal().reveal('.bruh', {delay: 200, origin: "left"});
+        ScrollReveal().reveal('.test', {delay: 200, origin: "right"});
+
+        ScrollReveal().reveal('.degree', {delay: 200, origin: "left"});
+        ScrollReveal().reveal('.bars', {interval: 200, origin: "left"});
+
+        ScrollReveal().reveal('.service', { interval: 200,origin: "left" });
+        ScrollReveal().reveal('.Contact-gauche', { interval: 200,origin: "left" });
+        ScrollReveal().reveal('.Contact-droite', { interval: 200,origin: "right" });
+
+
+        
+
+        
 
 
 
        
   
      </script>
+    <script src="/js/form.js"></script>
+
 </body>
 </html>
