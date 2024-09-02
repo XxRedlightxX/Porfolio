@@ -879,7 +879,7 @@ h2 {
    
 }
 .Contact .social i:hover{
-    color:#007ced;
+    color:var(--second-color);
     transform: rotate(360deg);
 }
 
