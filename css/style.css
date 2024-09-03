@@ -565,11 +565,11 @@ h2 {
 }
 
 .bar .Kotlin:before {
-    width: 95%;
+    width: 90%;
 }
 
 .bar .Java:before {
-    width: 98%;
+    width: 88%;
 }
 
 .bar .Python:before {
@@ -585,7 +585,7 @@ h2 {
 }
 
 .bar .sql:before {
-    width: 90%;
+    width: 85%;
 }
 
 .bar .sql:before {
