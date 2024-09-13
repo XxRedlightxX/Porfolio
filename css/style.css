@@ -8,7 +8,7 @@
     --first-color : white;
     
     --second-color : #ac0a0a;
-    --third-color : #777;
+    --third-color : black;
     
 
     --body-bg-color : #fefefe;
@@ -475,14 +475,14 @@ h2 {
 }
 
 .edu-list .degree p span {
-    color : var(--third-color);
+    color : red;
     font-size: var(--small-font-size);
 
 }
 
 
 .edu-list .degree p span {
-    color : var(--first-color);
+    color : var(--third-color);
     font-size: var(--normal-font-size);
     font-weight: 500;
 }
@@ -588,8 +588,12 @@ h2 {
     width: 90%;
 }
 
-.bar .sql:before {
-    width: 90%;
+.bar .net:before {
+    width: 75%;
+}
+
+.bar .spring:before {
+    width: 80%;
 }
 
 .bar .git:before {
@@ -767,6 +771,43 @@ h2 {
     color: white;
     margin-top: 230px;
 }
+/****/
+.test2 {
+    margin-top: 5px;
+    
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+
+.project-card_bubble {
+    /*padding: 10px;
+    margin: 14px;
+    border-radius: 30px;
+    border: 1px solid black;
+    font-size: .7em;
+    height: 12px;
+    text-align: center;*/
+  
+        padding: 6px 10px; /* Reduced padding */
+        margin: 2px 5px;   /* Reduced margin */
+        border-radius: 20px; /* Smaller border radius */
+        font-size: 0.7em;  /* Reduced font size */
+        border: 2px solid #e5e5e5;
+        color: var(--card-bg-color);
+        background-color: var(--button);
+        box-shadow: 0 5px 5px -4px rgb(0 0 0 / 78%);
+        transition: 1s;
+   
+    
+    
+    
+    
+
+}
+
+
 
 
 
@@ -1025,8 +1066,8 @@ footer{
     font-weight: 400;
     margin: 0px 5px;
 }
-
-@media (max-width : 1550px) {
+/**changement .this*/
+@media (max-width : 1850px) {
     .lol {
         margin-left: 50px;
        
@@ -1077,13 +1118,16 @@ footer{
     }
 
     .this {
-        margin-bottom: 110px;
+        margin-bottom: 60px;
     }
 
 }
 
 
-@media (max-width : 1200px) {
+
+
+
+@media (max-width : 1370px) {
 
     #section-moi {
         
@@ -1232,7 +1276,7 @@ footer{
 
 
 
-@media (max-width: 800px){
+@media (max-width: 830px){
 
     /*.modal {
         max-width: 50%;
@@ -1244,9 +1288,14 @@ footer{
         min-height: 20%;
     }*/
 
+    .about-me {
+        margin: 120px;
+        
+    }
+
    
     .Contact-gauche {
-        margin: 0;
+      
         
         margin-left: -55px;
        
@@ -1279,6 +1328,11 @@ footer{
         
         margin-right: 60px;
         
+    }
+
+    .about-me {
+       
+        padding-left: 50px;
     }
 
     #Grand-projet {
@@ -1395,7 +1449,7 @@ footer{
 
 
 }
-@media(max-width:768px)
+@media(max-width:821px)
 {
     .container{
         flex-direction: column;
@@ -1466,6 +1520,24 @@ footer{
         display: none;
     }
 
+    .Contact-gauche {
+        width: fit-content;
+        height: fit-content;
+    }
+    .Contact {
+        padding-right: 70px;
+        /*border-style: double;*/
+        margin: 120px;
+    }
+
+    .d{
+        gap: 1em;
+        padding-left: 5px;
+        max-width: 100%
+    }
+
+
+
 
 
    /* .Contact  {
@@ -1530,30 +1602,43 @@ footer{
 
 }
 
-@media(max-width:400px)
+@media(max-width:430px)
 {
-    .Contact {
+    /*.Contact {
         padding-left: 70px;
+    }*/
+    .Contact  {
+       
+       margin-left: -5px;
     }
+
+    
 
     
 
 }
 
 
-@media(max-width:376px)
+@media(max-width:390px)
 {
 
     .d{
         gap: 0.5em;
-        padding-left: 40px;
+        padding-left: 30px;
         width: 68%
     }
 
+   
     .moi-text {
       
-        padding: 40px;
+        padding: 15px;
     }
+
+    .Contact  {
+        
+        margin: -17px;
+     }
+ 
 
    
     
