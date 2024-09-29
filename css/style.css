@@ -274,6 +274,14 @@ nav .navlinks li a:hover{
     border:2px solid #e5e5e5;
     box-shadow:  0 10px 10px -8px rgb(0 0 0 / 78%);
     transition: 1s;
+    
+}
+
+
+.btn-group .btn:first-child{
+   
+    cursor: not-allowed;
+    
 }
 
 .btn-group a{
